@@ -1,0 +1,31 @@
+<div style="text-align: center">
+  <img 
+  src="../assets/logo.jpeg"
+  alt="Project Logo"
+  width="200"
+  height="100"
+  class="logo"
+  />
+  <h1 class="app-title">TO-DO List</h1>
+</div>
+<div class="container">
+  Add a TODO...
+  <br>
+  <input 
+  type="text"   
+  class="input-text"  
+  placeholder="Type a TODO" 
+  [(ngModel)] = "todoValue"
+  (keyup.enter)="addItem()"
+  />
+  <button class="add-btn" (click)="addItem()" >ADD TODO</button>
+  <div class="list">
+    <ul>
+      <li *ngFor="let item of list">
+        <input type="checkbox" name="isDone" [(ngModel)]="item.isDone"/>
+        {{item.value}} 
+        <Button class="btn" (click)="deleteItem(item.id)" >Delete</Button>
+      </li>
+    </ul>
+  </div>
+</div>
