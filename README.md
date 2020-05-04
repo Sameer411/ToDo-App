@@ -3,7 +3,7 @@ I have Created ToDo application using Angular which allows to add the tasks and 
 How To Run:- 
 Step 1) Install the node modules in project Directory use command "npm install" 
 
-Step 2) Install Angular in the project Directory and use all commands from set up sectioon from angular.io setup section to install
+Step 2) Install Angular in the project Directory and use all commands from set up section from angular.io setup section to install
 
 Step 3)Then start command prompt and go to project directory
 
